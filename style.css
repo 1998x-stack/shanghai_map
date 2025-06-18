@@ -1,0 +1,66 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+#map-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.zoom-controls {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.zoom-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+}
+
+.zoom-btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+#location-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 2;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    color: #2c3e50;
+}
+
+#zoom-level {
+    font-weight: bold;
+    color: #e74c3c;
+}
