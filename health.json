@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "service": "shanghai_map",
+  "artifactPresent": true,
+  "scope": "static-build-only",
+  "checksExternalTiles": false,
+  "checksBrowserInteraction": false,
+  "checksMapCompliance": false
+}
